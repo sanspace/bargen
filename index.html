@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Barcode Generator - Generate multiple barcodes for print">
+    <meta name="author" content="Santhosh Kumar Srinivasan">
+    <!-- Based on https://github.com/lindell/JsBarcode -->
+    
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Barcode Generator</title>
+    
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse
+                hidden-print fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button"
+              data-toggle="collapse" data-target="#navbarsDefault"
+              aria-controls="navbarsDefault" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">BarGen</a>
+
+      <div class="collapse navbar-collapse" id="navbarsDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link"
+               href="https://github.com/sanspace/bargen">Fork</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+               href="https://github.com/sanspace/bargen/issues/new">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row content">
+        <div class="col-6 text-center">
+          <svg class="barcode"></svg>
+          <input type="text"  class="form-control barcode-input hidden-print"
+                 placeholder="Example 1234" />
+          <select name=""  class="form-control barcode-format hidden-print">
+            <option value="CODE39">CODE39</option>
+            <option value="CODE128">CODE128</option>
+            <option value="CODE128A">CODE128A</option>
+            <option value="CODE128B">CODE128B</option>
+            <option value="CODE128C">CODE128C</option>
+            <option value="EAN13">EAN13</option>
+            <option value="EAN18">EAN18</option>
+            <option value="UPC">UPC</option>
+            <option value="ITF">ITF</option>
+            <option value="ITF14">ITF14</option>
+            <option value="MSI">MSI</option>
+            <option value="MSI10">MSI10</option>
+            <option value="MSI11">MSI11</option>
+            <option value="MSI1010">MSI1010</option>
+            <option value="MSI1110">MSI1110</option>
+            <option value="pharmacode">pharmacode</option>
+          </select>
+        </div>
+        <div class="col-6 text-center">
+          <svg class="barcode"></svg>
+          <input type="text"  class="form-control barcode-input hidden-print"
+                 placeholder="Example 1234" />
+          <select name=""  class="form-control barcode-format hidden-print">
+            <option value="CODE39">CODE39</option>
+            <option value="CODE128">CODE128</option>
+            <option value="CODE128A">CODE128A</option>
+            <option value="CODE128B">CODE128B</option>
+            <option value="CODE128C">CODE128C</option>
+            <option value="EAN13">EAN13</option>
+            <option value="EAN18">EAN18</option>
+            <option value="UPC">UPC</option>
+            <option value="ITF">ITF</option>
+            <option value="ITF14">ITF14</option>
+            <option value="MSI">MSI</option>
+            <option value="MSI10">MSI10</option>
+            <option value="MSI11">MSI11</option>
+            <option value="MSI1010">MSI1010</option>
+            <option value="MSI1110">MSI1110</option>
+            <option value="pharmacode">pharmacode</option>
+          </select>
+        </div>
+      <div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"
+            integrity="sha256-ucaWWNyVP2pMZtQZnwWf+f/+iK7ht0W0ZeSoNf82zA4="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+ </html>
